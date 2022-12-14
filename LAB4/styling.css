@@ -1,0 +1,72 @@
+body{
+    background-color: #343a40;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+}
+
+body .h1{
+    margin: 0;
+    color: white;
+}
+/* .navbar{
+    position: fixed;
+} */
+.background_div{
+    padding: 10px 10px;
+    margin-top: 5px;
+    background-image: url(https://mixnews.lv/wp-content/uploads/2020/09/18/2020-09-18-mixnews-1594705838_krasota-prirody-na-fotografiyax-14.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    height: 450px;
+    
+}
+.background_div .info{
+    margin: 10px 200px 10px 10px;
+    padding: 10px 0 0 10px;
+    background-color: rgba(255, 255, 255, 0.333);
+    width: auto;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.background_div .info .avatar{
+    display: flex;
+}
+.background_div .info .avatar .ava img{
+    width: 120px;
+    height: 120px;
+	border-radius: 10px;
+    padding: 5px;
+    border:  2px solid black;
+}
+.background_div .avatar h1,h5{
+    margin: 5px;
+}
+.background_div .info .description{
+    padding: 10px;
+}
+.background_div #whatsup{
+    margin: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid black;
+    float: right; 
+}
+.flex{
+    background-color: #343a40;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.flex button{
+    color: white;
+    transition-duration: 0.5s;
+    background-color: transparent;
+    border: none;
+    cursor:pointer;
+}
+.rights{
+    text-align: center;
+    color: white;
+    background-color: rgb(30,30,30);
+}

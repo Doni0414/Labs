@@ -1,0 +1,63 @@
+body{
+    background-color: #343a40;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+}
+
+body .h3{
+    margin: 0;
+    color: white;
+}
+.background_div{
+    padding: 5px;
+    margin-top: 5px;
+    background-image: url(https://mixnews.lv/wp-content/uploads/2020/09/18/2020-09-18-mixnews-1594705838_krasota-prirody-na-fotografiyax-14.jpg);
+    background-size: cover;
+    height: 450px;
+}
+#heading{
+    color: white;
+    margin-left:30px;
+}
+.background_div .schedule{
+    text-align: center;
+    color: whitesmoke;
+}
+.background_div .schedule table{
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.background_div .schedule table th,td{
+    border: 1px solid black;
+}
+.background_div .schedule table th{
+    background-color: rgb(108, 109, 114);
+}
+.background_div .schedule table td{
+    color: black;
+    background-color: white;
+}
+.background_div .schedule table .empty{
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.flex{
+    position: fixed;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.flex button{
+    color: white;
+    transition-duration: 0.5s;
+    background-color: transparent;
+    border: none;
+    cursor:pointer;
+}
+.rights{
+    text-align: center;
+    color: white;
+    background-color: rgb(30,30,30);
+}
