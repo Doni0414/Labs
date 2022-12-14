@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(140, 178, 211);
+    padding: 20px;
+    color: white;
+}
+
+.content{
+    padding-top: 20px;
+    width: 98vw;
+    height: 100vh;
+    background-image: url(https://st.depositphotos.com/1943535/2418/i/450/depositphotos_24182721-stock-photo-checkers-game.jpg);
+    background-repeat: none;
+    background-size: cover;
+}
+.content .heading{
+    color: white;
+    text-align: center;
+}
+.content .account{
+    background-color: white;
+    border-radius: 10px;
+    width: 30vw;
+    height: 50vh;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: large;
+}
+.account div{
+    margin: 20px 10px;
+}
+#user{
+    margin: 0;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(140, 178, 211);
+    border-radius: 10px;
+}
+

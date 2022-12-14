@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJK6rjR3fVNLaxmaUUorZwyJlsVzJvOwJqZw&usqp=CAU" alt="" width="20" height="20">
+        <div>Главная</div>
+        <div>Тренировки</div>
+        <div>Рейтинг</div>
+        <div>Соревнования</div>
+    </div>
+
+    <div class="content">
+        <div class="heading">
+            <h1>Шашки</h1>
+            <h3>Прокачай свои навыки. Шашки - это твое</h3>
+        </div>
+        <div class="log">
+            <div class="choose">
+                <div onclick="loginChange()">Login</div>
+                <div onclick="signinChange()">Sign in</div>
+            </div>
+            <div class="form">
+                <form id="f">          
+                    <input id="login" name="" placeholder="Имя пользователя" type="text">
+                    <input id="password" name="" placeholder="Пароль" type="password">
+                    <div id="label">Enter your name and password</div>
+                    <br>
+                    <button id="btn" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
