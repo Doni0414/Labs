@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Instructions</title>
+    </head>
+    <body>
+        <div>For the next lab:</div>
+        <div>Change saving data logic of the previous lab </div>
+        <div>Both login and registration are required </div>
+        <div>Instead of localStorage you should save it in database </div>
+        <div>You have to defend your lab offline ( during lesson or in office hours )</div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>Instructions:</div>
+
+        <ul>
+            <li>Install xampp</li>
+            <li>Start apache and sql</li>
+            <li>Delete files that you don't need ( mostly - all of them ) from the htdocs directory. Usually in windows this location is C:\xampp\htdocs</li>
+            <li>Create (or copy) your lab files here. Now you can access your website straight through browser in http://localhost/</li>
+        </ul>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div>Form example</div>
+
+        <br>
+        <br>
+
+        <form onsubmit="login(event)" action="#">
+            <input type="text" placeholder="name" name="name">
+            <input type="text" placeholder="password" name="password">
+            <button type="submit">Submit</button>
+        </form>
+        <script>
+            function login(event){
+                event.preventDefault();
+
+                let form = event.target;
+                let formdata = new FormData (form);
+
+                fetch('http://localhost/login.php',{
+                    method:'post',
+                    body:formdata
+                })
+                .then(result=>{
+
+                    // if we want this data to be text
+                    // return result.text()
+                    
+                    // if we want this data to be JSON
+                    // return result.json()
+                    
+                })
+                .then(final_result=>{
+                    console.log(final_result);
+                })
+            }
+        </script>
+    </body>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJK6rjR3fVNLaxmaUUorZwyJlsVzJvOwJqZw&usqp=CAU" alt="" width="20" height="20">
+        <div>Главная</div>
+        <div>Тренировки</div>
+        <div>Рейтинг</div>
+        <div>Соревнования</div>
+    </div>
+
+    <div class="content">
+        <div class="heading">
+            <h1>Шашки</h1>
+            <h3>Прокачай свои навыки. Шашки - это твое</h3>
+        </div>
+        <div class="log">
+            <div class="choose">
+                <div onclick="loginChange()">Login</div>
+                <div onclick="signinChange()">Sign in</div>
+            </div>
+            <div class="form">
+                <!-- <form id="f">           -->
+                    <input id="login" name="" placeholder="Имя пользователя" type="text">
+                    <input id="password" name="" placeholder="Пароль" type="password">
+                    <div id="label">Enter your name and password</div>
+                    <br>
+                    <button id="btn" onclick="sumbit(this.textContent,login.value,password.value)" type="submit">Login</button>
+                <!-- </form> -->
+            </div>
+        </div>
+    </div>
+    <script>
+        var form = document.getElementById('f');
+
+    //     form.addEventListener('submit',function(event){
+    //     event.preventDefault();
+    //     var button = document.getElementById('btn');
+
+    //     var login = document.getElementById('login');
+    //     var password = document.getElementById('password');
+    //     if(button.textContent==='Sign in'){
+    //         localStorage.setItem('login',login.value);
+    //         localStorage.setItem('password',password.value);
+    //         window.location.href = 'account.html';
+    //     }else{
+    //         if(localStorage.getItem('login') === login.value && localStorage.getItem('password')===password.value){
+    //             console.log("OHHH YEAAH");
+    //             window.location.href = 'account.html';
+    //         }else{
+    //             document.getElementById('label').textContent = 'Wrong login or password!';
+    //             console.log('Wrong!!!');
+    //         }
+    //     }
+    // });
+        function sumbit(text,uname,pass){
+            if(text==='Login'){
+                log_php(uname,pass);   
+            }else{
+                signin_php(uname,pass);
+            }
+        }
+        function signin_php(uname,pass){
+            $.ajax({
+                url: 'login.php',
+                type: 'POST',
+                data: {username: uname, password: pass},
+                success: function(result){
+                    // console.log(result);
+                    if(result==='Success'){
+                        window.location.href = 'account.html';
+                    }
+                },
+                error: function(){
+                }
+            });
+        }
+        function log_php(uname,pass){
+            $.ajax({
+                url: 'login.php',
+                type: 'POST',
+                data: {username: uname, password: pass},
+                success: function(result){
+                    // console.log(result);
+                    if(result==='Login!'){
+                        window.location.href = 'account.html';
+                    }
+                },
+                error: function(){
+                }
+            });
+        }
+
+function signinChange(){
+    document.getElementById('btn').textContent = 'Sign in';
+}
+function loginChange(){
+    document.getElementById('btn').textContent = 'Login';
+}
+    </script>
+</body>
+</html>
