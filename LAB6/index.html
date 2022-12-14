@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="items d-flex justify-content-around my-3">
+        <div class="container-sm mx-3 item bg-danger animal py-3 px-4 text-center">Eagle</div>
+        <div class="container-sm mx-3 item bg-danger car py-3 px-4 text-center">Mercedes</div>
+        <div class="container-sm mx-3 item bg-danger car py-3 px-4 text-center">BMW</div>
+        <div class="container-sm item mx-3 bg-danger fruit py-3 px-4 text-center">Banana</div>
+        <div class="container-sm mx-3 item bg-danger animal py-3 px-4 text-center">Worm</div>
+        <div class="container-sm mx-3 item bg-danger fruit py-3 px-4 text-center">Apple</div>
+        <div class="container-sm mx-3 item bg-danger car py-3 px-4 text-center">Toyota</div>
+        <div class="container-sm mx-3 item bg-danger car py-3 px-4 text-center">Tesla</div>
+    </div>
+
+    <div class="buttons d-flex justify-content-around my-3">
+        <button type="button" class="btn btn-primary px-4" onclick="remove('animal')">Remove animals</button>
+        <button type="button" class="btn btn-primary px-4" onclick="remove('car')">Remove cars</button>
+        <button type="button" class="btn btn-primary px-4" onclick="remove('fruit')">Remove fruits</button>
+        <button type="button" class="btn btn-primary px-4" onclick="back()">Return all</button>
+    </div>
+    <script>
+        var items = document.getElementsByClassName('item');
+
+        function remove(type){
+            for(var i = 0; i < items.length; i++){
+                if(items[i].classList.contains(type)){
+                    items[i].style.display = 'none';
+                }
+            }
+        }
+
+        function back(){
+            for(var i = 0; i < items.length; i++){
+                items[i].style.display = 'block';
+            }
+        }
+
+    </script>
+</body>
+</html>
