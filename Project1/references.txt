@@ -1,0 +1,3 @@
+Shop: file:///C:/Users/%D1%81%D1%83%D0%BB%D0%BF%D0%B0%D0%BA/Desktop/Frontend/Project%201/shop.html
+Personal Trainings: file:///C:/Users/%D1%81%D1%83%D0%BB%D0%BF%D0%B0%D0%BA/Desktop/Frontend/Project%201/product.html
+My Account:  

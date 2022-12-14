@@ -1,0 +1,427 @@
+body{
+    margin: 0;
+    background-color: #333333;
+    /* font-family: poppins,sans-serif; */
+}
+.dau_div{
+    background-color: white;
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    padding-left: 5vw;
+    padding-top: 10vh;
+}
+.dau_div a{
+    color: black;
+}
+.dau_div h2{
+    margin: 0;
+}
+
+.dau_div .menu{
+    width: 30vw;
+    padding: 5px 10px 5px 0;
+    border-bottom: 2px solid rgb(171, 170, 170);
+}
+.dau_div .lang:hover .langs{
+    display: block;
+}
+.dau_div .lang .langs{
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          padding: 12px 16px;
+          z-index: 1;
+          display: none;
+}
+.dau_div .lang .langs ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.dau_div .x_div{
+    padding: 10px 15px;
+    position: absolute;
+    background-color: #f2333a;
+    top: 5px;
+    right: 10vw;
+    /* width: 30px;
+    height: 30px; */
+    border-radius: 3px;
+}
+.dau_div .x_div .x{
+    cursor: pointer;
+}
+.header{
+    margin-right: 20px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+.header .flex{
+    margin-left: 10px;
+    display: flex;
+}
+.header .flex .flex_1{
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.header .flex_12{
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.header .flex .logo{
+    width: 50px;
+    height: 50px;
+}
+.header a{
+    text-decoration: none;
+    color: black;
+}
+.header .flex .flex_1 .language{
+    padding: 0;
+    text-decoration: none;
+}
+.header .mobile_div{
+    display: none;
+}
+.header .flex .flex_1 .language:hover .languages{
+    display: block;
+}
+.header .flex .flex_1 .language .languages{
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          padding: 12px 16px;
+          z-index: 1;
+}
+.header .flex .flex_1 .language .languages ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+/* .alone_div{
+    width: 100%;
+} */
+/* .main_images{
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+} */
+.main_image{
+    width: 50px;
+    height: 40px;
+    background-color: #cccccc;
+    border-radius: 10px;
+}
+
+.background_div{
+    background-position-x: center;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(https://calisthenics.school/wp-content/uploads/2017/03/DSC_1704.jpg);
+    background-color: rgba(5,20,30,.4);
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100vh;
+    background-position: center;
+    background-position-x: center;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+.background_div .magazin h1{
+    font-size: 50px;
+    /* margin: 10%; */
+}
+.background_div .magazin .flex_2{
+    margin-left: 10%;
+}
+.background_div .magazin p,h1,.main_a{
+    text-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+    color: #fff;
+}
+a{
+    text-decoration: none;
+}
+
+.content{
+    background: url(https://calisthenics.school/wp-content/uploads/2018/02/bg-transparent2.png) repeat,
+    url(https://calisthenics.school/wp-content/uploads/2018/02/bg-gradient.png) repeat-x;
+    width: 98,5vw;
+    padding: 50px 0;
+}
+.content .items{
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: space-around;
+    /* margin-left: 5vw;
+    margin-right: 5vw; */
+}
+.content .items .item .consol{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 140px;
+    background-color: #eee;
+    border-radius: 3px;
+    
+}
+.content .items .item .consol div{
+    margin: 5px 0;
+}
+.content .items .item .consol a{
+    color: black;
+    size: auto;
+    font-family: roboto,sans-serif;
+    font-size: small;
+}
+.content .items .item{
+    width: 42vw;
+}
+.content .items .item .message{
+    color: white;
+}
+.content .items .item .a_button{
+    color: #f2333a;
+}
+.content .items .item:hover img{
+    text-align: center;
+    box-shadow: 0 0 3em rgb(132, 0, 0);
+}
+/* .content .items .item{
+    text-align: center;
+} */
+.content .items .item img{
+    width: 35vw;
+    height: 43vw;
+    margin: 0 20px 0 0;
+    text-align: center;
+}
+.content .items .item .flex_3{
+    display: flex;
+    color: white;
+    margin-top: 5px;
+}
+.content .items .item .flex_3 .old_price{
+    opacity: .5;
+}
+.content .items .item .price{
+    background-color: #f2333a;
+    padding: 2px 2px;
+    margin-left: 5px;
+}
+.content .items .item .flex_3 .count{
+    color: black;
+    background-color: white;
+    padding: 5px 15px;
+    text-align: center;
+    border-radius: 2px;
+    border-bottom: 1px solid #f2333a;
+}
+.content .items .item .flex_3 .corzina{
+    background-color: #f2333a;
+    padding: 10px 10vw;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+.content .items .item{
+    text-align: left;
+}
+.content .items .item .rows{
+    color: #cccccc;
+    margin-left: -20px;
+    width: 40vw;
+
+}
+.content .items .item{
+    margin-left: 30px;
+}
+.content .items .item .rows .row{
+    margin-top: 10px;
+}
+.content .items .item .cat{
+    color: #cccccc;
+}
+.content .items .item .cat a{
+    color: #f2333a;
+}
+
+.footer{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+}
+.footer .column{
+    margin: 10px 20px;
+}
+.footer .column a{
+    color: white;
+}
+.footer .column a p{
+    margin-left: 3px;
+}
+.footer .column a label{
+    font-size: 20px;
+}
+.footer .column a:hover p{
+    color: #a5a5a5;
+}
+.footer .column .h3_div{
+    border-bottom: 1px solid #282424;
+    border-top: 2px solid#f2333a;
+}
+
+.footer .column .red_a:hover p{
+    color:#f2333a;
+}
+.footer .column .red_a:hover label{
+    color:#f2333a;
+}
+.footer .column .info{
+    color:#a5a5a5;
+}
+
+.credits{
+    padding: 50px 20px;
+    background-color: #222;
+    /* text-align: center; */
+}
+.credits .credit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.credits .credit img{
+    width: 110px;
+    height: 100px;
+}
+.credits .credit .credit_name{
+    color: #333333;
+}
+.credits .credit .credit_name a{
+    color: white;
+}
+.footer .column .red_a{
+    display: flex;
+    align-items: center;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #f2333a;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(228, 228, 228);
+}
+/* @media screen and (max-width: 1700px){
+    .background_div{
+        height: 100hw;
+        background-position-x: center;
+        background-position-y: 100px;
+
+    }
+} */
+@media screen and (max-width: 950px){
+    .header .flex_12{
+        width: 45vw;
+    }
+    .header .label_div{
+        margin-left: 20px;
+        display: block;
+        width: 42px;
+        height: 30px;
+        text-align: center;
+        background-color: #d6d4d4;
+        border-radius: 38%;
+    }
+    .header .label_div .hamburger{
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .header .mobile_div{
+        display: block;
+    }
+    
+    .header .flex .flex_1{
+        display: none;
+    }
+    #toggle:checked+.dau_div{
+        display: block;
+    }
+    .background_div{
+        height: 100vh;
+        background-position: center;
+    }
+    .background_div .magazin h1{
+        font-size: 30px;
+        margin: 10%;
+    }
+
+    .content .items .item img{
+        width: 30vw;
+        height: 40vw;
+        /* margin: 20px 20px; */
+    }
+    /* .content .items .item .course_name{
+        width: 32vw;
+        font-size: 1em;
+        color: white;
+        margin: 0;
+        margin-left: 0;
+    } */
+}
+@media screen and (max-width:625px){
+    .content .items{
+        justify-content: space-between;
+    }
+    .content .items .item .consol{
+        padding-right: 60vw;
+    }
+    .content .items .item .message{
+        width: 60vw;
+    }
+}
+@media screen and (max-width:550px){
+    .header .flex_12{
+        width: 50vw;
+    }
+    .background_div{
+        background-position-x: center;
+        height: 60vh;
+    }
+    .background_div .magazin h1{
+        font-size: 20px;
+        margin-left: 10%;
+    }
+
+    .content .items .item img{
+        width: 50vw;
+        height: 63vw;
+        /* margin: 20px 20px; */
+    }
+    /* .content .items .item .course_name{
+        width: 77vw;
+    } */
+}

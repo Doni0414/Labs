@@ -1,0 +1,38 @@
+nav{
+    display: flex;
+    background-color: rgb(52, 79, 107);
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+}
+li{
+    margin-right: 5px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+input{
+    height: 20px;
+}
+.content{
+    display: flex;
+    align-items: center;
+}
+.post{
+    display: inline-block;
+}
+.info{
+    width: 50%;
+}
+@media screen and(max-width: 768px) {
+    .post{
+        width: 50%;
+    }
+    .info{
+        width: 50%;
+    }
+}

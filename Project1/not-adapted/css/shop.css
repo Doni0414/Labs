@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+    background-color: #333333;
+    font-family: poppins,sans-serif;
+}
+.header{
+    margin-right: 20px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+.header .flex_1{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.header .flex_1 .logo{
+    width: 50px;
+    height: 50px;
+}
+.header a{
+    text-decoration: none;
+    color: black;
+}
+.header .flex_1 .language{
+    padding: 0;
+    text-decoration: none;
+}
+.header .flex_1 .language:hover .languages{
+    display: block;
+}
+.header .flex_1 .language .languages{
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          padding: 12px 16px;
+          z-index: 1;
+}
+.header .flex_1 .language .languages ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.alone_div{
+    width: 100%;
+}
+.main_images{
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+}
+.main_image{
+    width: 50px;
+    height: 40px;
+    background-color: #cccccc;
+    border-radius: 10px;
+}
+
+.background_div{
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(https://calisthenics.school/wp-content/uploads/2016/12/cropped-IMG_8313-1.jpg);
+    background-color: rgba(5,20,30,.4);
+    background-repeat: none;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+.background_div .magazin h1{
+    font-size: 50px;
+    margin: 10%;
+}
+.background_div .magazin .flex_2{
+    margin-left: 30%;
+}
+.background_div .magazin p,h1,.main_a{
+    text-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+    color: #fff;
+}
+a{
+    text-decoration: none;
+}
+
+.content{
+    background: url(https://calisthenics.school/wp-content/uploads/2018/02/bg-transparent2.png) repeat,
+    url(https://calisthenics.school/wp-content/uploads/2018/02/bg-gradient.png) repeat-x;
+    width: 98,5vw;
+    padding-bottom: 50px;
+    /* height: 100vh; */
+}
+.content .items{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.content .items .item{
+    text-align: center;
+}
+.content .items .item:hover img{
+    box-shadow: 0 0 3em rgb(132, 0, 0);
+}
+.content .items .item img{
+    width: 210px;
+    height: 300px;
+    margin: 20px 20px;
+}
+.content .items .item .course_name{
+    width: 20vw;
+    font-size: 1em;
+    color: white;
+    margin: 0;
+    margin-left: 0;
+}
+
+.footer{
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+    color: white;
+}
+
+.footer .column a{
+    color: white;
+}
+.footer .column a:hover p{
+    color: #282424;
+}
+.footer .column h3{
+    border-radius: 1px;
+    border-bottom: #282424;
+    border-top: #282424;
+}
+/* .footer .column .hr_1{
+    color: #ff0000;
+    background-color: #970000;
+    border-radius: 0;
+    border-style: inset;
+} */
+.footer .column .red_a:hover p{
+    color:#a8000052;
+}
+.footer .column .info{
+    color:#a5a5a5;
+}
+
+.credits{
+    padding: 50px 20px;
+    background-color: #222;
+    /* text-align: center; */
+}
+.credits .credit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.credits .credit img{
+    width: 110px;
+    height: 100px;
+}
+.credits .credit .credit_name{
+    color: #333333;
+}
+.credits .credit .credit_name a{
+    color: white;
+}
